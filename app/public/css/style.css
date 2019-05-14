@@ -18,23 +18,24 @@ body{
 
 header{
     width: 100%;
-    min-height: 25vh;
-    background-color: #222f32;
+    min-height: 15vh;
+    background-color: #222f3e;
 }
 
 nav{
     width: 100%;
     min-height: 10vh;
-    background-color: #494b3d;
+    background-color: #696b6d;
 }
 
 menu{
-    width: 100%;
+    width: 70%;
     height: auto;
     margin: 0 auto;
 }
 
 nav menu ul{
+    width: 100%;
     display: inline-flex;
     justify-content: center;
 }
@@ -42,6 +43,123 @@ nav menu ul{
 nav menu ul li{
     background-color: #fff;
     width: 30%;
-    height: 2em;
+    height: 2.5em;
     margin: 1em;
+    text-align: center;
+    border: 1px solid #000;
+    border-radius: 5px;
 }
+
+nav menu ul li a{
+    display: block;
+    padding: 10px;
+    color: #000;
+    transition: all;
+    transition-delay: 100ms;
+    transition-duration: 600ms;
+}
+
+nav menu ul li a:hover{
+    transition: all;
+    transition-delay: 100ms;
+    transition-duration: 600ms;
+    transform: scale(1.1,1.1);
+    background-color: #fa9e47;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* -------------------- MAIN --------------------*/
+
+main{
+    width: 95%;
+    min-height: 20em;
+    margin: 10px auto; 
+}
+
+main article#conteudo{
+    width: 100%;
+    height: auto;
+}
+
+main article#conteudo section{
+    width: 50%;
+    height: auto;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #444;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 1px 1px 10px 2px #000;
+    display: table;
+}
+
+main article#conteudo section p{
+    text-align: justify;
+}
+
+main article#conteudo section h1{
+    font-size: 1.4em;
+    text-transform: uppercase;
+    line-height: 1.2em;
+}
+
+main article#conteudo section div#img{
+    width: 250px;
+    height: 250px;
+    margin: 5px auto;
+    border-radius: 50%;
+}
+
+main article#conteudo section div#img img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+main article#conteudo section#cadastro{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    display: inline-flex;
+    justify-content: space-evenly;
+}
+
+main article#conteudo section#cadastro section#form{
+    width: 55%;
+    border: none;
+    box-shadow: none;
+}
+
+article#conteudo section#cadastro section#tabela{
+    width: 40%;
+    border: none;
+    box-shadow: none;
+}
+
+/* -------------------- FORM --------------------*/
+
+form label{
+    font-size: 1.5em;
+    line-height: 2em;
+}
+
+form input, select{
+    width: 100%;
+    height: 2em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+form input#codigo{
+    width: 10%;
+}
+
+form input#mensagem{
+    width: 50%;
+    height: 5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
