@@ -22,14 +22,14 @@ function limpaCampos(){
     $('#mensagem').val('');*/
 }
 
-function validar(){
+function validar() {
     let codigo = $('#codigo').val();
     let nome = $('#nome').val().trim();
     let email = $('#email').val().trim();
     let erro = false;
     if(codigo == '' || codigo <= 0){
         $('#codigo').addClass('erro');
-        erro = true;
+        console.log('oi');        erro = true;
     }
     else
         $('#codigo').removeClass('erro');
