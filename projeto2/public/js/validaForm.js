@@ -48,13 +48,13 @@ function validar(){
     else
         $('#cursos').removeClass('erro');
 
-        alert(email.match('(\w@[a-zA-Z]+).com(.br)?$'));
+    //alert(email.match('(\w@[a-zA-Z]+).com(.br)?$'));
 
 
-    if(email.match('(\w@[a-zA-Z]+).com(.br)?$'))
+    /*if(email.match('(\w@[a-zA-Z]+).com(.br)?$'))
         $('#email').addClass('erro');
     else
-        $('#email').removeClass('erro');
+        $('#email').removeClass('erro');*/
 
 
     if(erro)
